@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C587DB39C2FE32B41F77D62A5044C178 /* Pods-FORGestureTrackDisplayDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39EF0F9C7C6267AE8CE66FC8A3166863 /* Pods-FORGestureTrackDisplayDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB9DD9E998599BE832498A2C9BFAF1DB /* Pods-FORGestureTrackDisplayDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 718828EEFDE9E1E2CE44614C657BE886 /* Pods-FORGestureTrackDisplayDemo-dummy.m */; };
+		F7F994188B430E9A664036EC4CDEE673 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39EF0F9C7C6267AE8CE66FC8A3166863 /* Pods-FORGestureTrackDisplayDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FORGestureTrackDisplayDemo-umbrella.h"; sourceTree = "<group>"; };
+		718828EEFDE9E1E2CE44614C657BE886 /* Pods-FORGestureTrackDisplayDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FORGestureTrackDisplayDemo-dummy.m"; sourceTree = "<group>"; };
+		84144B6E7543327D4E81BBEB3FF0E5B5 /* Pods-FORGestureTrackDisplayDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FORGestureTrackDisplayDemo.modulemap"; sourceTree = "<group>"; };
+		8DE813FAC64D77060BD54A95BCC356F7 /* Pods-FORGestureTrackDisplayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FORGestureTrackDisplayDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A20E8813415B047794180259615273CF /* Pods-FORGestureTrackDisplayDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FORGestureTrackDisplayDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		A9D886F3C5E02F5AD9C851F2BAD48865 /* Pods_FORGestureTrackDisplayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FORGestureTrackDisplayDemo.framework; path = "Pods-FORGestureTrackDisplayDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC15174AD6B37BDB9C92747B3E7C4B2 /* Pods-FORGestureTrackDisplayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FORGestureTrackDisplayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C3EEC9B079801A632706A769DA597639 /* Pods-FORGestureTrackDisplayDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FORGestureTrackDisplayDemo-resources.sh"; sourceTree = "<group>"; };
+		C550181EB65D8678374D748703DB8CCA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CE48042A1AFC48F64E34501E3D81B34B /* Pods-FORGestureTrackDisplayDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FORGestureTrackDisplayDemo-frameworks.sh"; sourceTree = "<group>"; };
+		DC89E0A321909B337C8E868574FB3578 /* Pods-FORGestureTrackDisplayDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FORGestureTrackDisplayDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E9F84075FE55A4E66341A2F14746180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F994188B430E9A664036EC4CDEE673 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		431B2C1D3C2707D1355A9CD7308D10F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9D886F3C5E02F5AD9C851F2BAD48865 /* Pods_FORGestureTrackDisplayDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				431B2C1D3C2707D1355A9CD7308D10F9 /* Products */,
+				FFCD92A2F554DCACDEDE83536F59835A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8AD6033F0314A094185A544475B5509 /* Pods-FORGestureTrackDisplayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C550181EB65D8678374D748703DB8CCA /* Info.plist */,
+				84144B6E7543327D4E81BBEB3FF0E5B5 /* Pods-FORGestureTrackDisplayDemo.modulemap */,
+				DC89E0A321909B337C8E868574FB3578 /* Pods-FORGestureTrackDisplayDemo-acknowledgements.markdown */,
+				A20E8813415B047794180259615273CF /* Pods-FORGestureTrackDisplayDemo-acknowledgements.plist */,
+				718828EEFDE9E1E2CE44614C657BE886 /* Pods-FORGestureTrackDisplayDemo-dummy.m */,
+				CE48042A1AFC48F64E34501E3D81B34B /* Pods-FORGestureTrackDisplayDemo-frameworks.sh */,
+				C3EEC9B079801A632706A769DA597639 /* Pods-FORGestureTrackDisplayDemo-resources.sh */,
+				39EF0F9C7C6267AE8CE66FC8A3166863 /* Pods-FORGestureTrackDisplayDemo-umbrella.h */,
+				8DE813FAC64D77060BD54A95BCC356F7 /* Pods-FORGestureTrackDisplayDemo.debug.xcconfig */,
+				ACC15174AD6B37BDB9C92747B3E7C4B2 /* Pods-FORGestureTrackDisplayDemo.release.xcconfig */,
+			);
+			name = "Pods-FORGestureTrackDisplayDemo";
+			path = "Target Support Files/Pods-FORGestureTrackDisplayDemo";
+			sourceTree = "<group>";
+		};
+		FFCD92A2F554DCACDEDE83536F59835A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8AD6033F0314A094185A544475B5509 /* Pods-FORGestureTrackDisplayDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		415111202AECBF73966CB3AB972A0C01 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C587DB39C2FE32B41F77D62A5044C178 /* Pods-FORGestureTrackDisplayDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6B352ED30E1D3568098E7FA6BFA00A3D /* Pods-FORGestureTrackDisplayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB2CDC8AFE3528671404BA61DA319B9A /* Build configuration list for PBXNativeTarget "Pods-FORGestureTrackDisplayDemo" */;
+			buildPhases = (
+				118DC1E62A6B38C86127D7E95E20B2B1 /* Sources */,
+				6E9F84075FE55A4E66341A2F14746180 /* Frameworks */,
+				415111202AECBF73966CB3AB972A0C01 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FORGestureTrackDisplayDemo";
+			productName = "Pods-FORGestureTrackDisplayDemo";
+			productReference = A9D886F3C5E02F5AD9C851F2BAD48865 /* Pods_FORGestureTrackDisplayDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 431B2C1D3C2707D1355A9CD7308D10F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B352ED30E1D3568098E7FA6BFA00A3D /* Pods-FORGestureTrackDisplayDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		118DC1E62A6B38C86127D7E95E20B2B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9DD9E998599BE832498A2C9BFAF1DB /* Pods-FORGestureTrackDisplayDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49C337B00FB5EC1F10AD9B97386EA383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE813FAC64D77060BD54A95BCC356F7 /* Pods-FORGestureTrackDisplayDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FORGestureTrackDisplayDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FORGestureTrackDisplayDemo/Pods-FORGestureTrackDisplayDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FORGestureTrackDisplayDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F5E3B6C69F35A61BF6F884D3B1B7125F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACC15174AD6B37BDB9C92747B3E7C4B2 /* Pods-FORGestureTrackDisplayDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FORGestureTrackDisplayDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FORGestureTrackDisplayDemo/Pods-FORGestureTrackDisplayDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FORGestureTrackDisplayDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB2CDC8AFE3528671404BA61DA319B9A /* Build configuration list for PBXNativeTarget "Pods-FORGestureTrackDisplayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C337B00FB5EC1F10AD9B97386EA383 /* Debug */,
+				F5E3B6C69F35A61BF6F884D3B1B7125F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
