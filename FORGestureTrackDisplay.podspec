@@ -4,7 +4,7 @@ s.summary      = 'Tracking the gustures and displaying in window'
 s.description      = <<-DESC
 FORGestureTrackDisplay is debug tool to displaying and tracking all kinds of gustures when user touch the screen.
                        DESC
-s.version      = '0.0.1'
+s.version      = '0.1.0'
 s.homepage     = "https://github.com/ZhipingYang/FORGestureTrackDisplay"
 s.license      = 'MIT'
 s.authors      = { 'ZhipingYang' => 'XcodeYang@gmail.com' }

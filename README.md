@@ -5,23 +5,21 @@
 
 ## Usage
 
-**first method**
+**first method ( Manual )**
 
-> in AppDelegate
+> in this way, just the appdelegate.window can track gustures.
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    FORGestureTrack* track = [[FORGestureTrack alloc] initWithFrame:self.window.bounds];
-    track.dotWidth = 40;
-    [self.window addSubview:track];
+    [self.window startTracking];
     
     return YES;
 }
 ```
 
-**second method(recommend)**
-> use runtime to hook window functions
+**second method ( auto )**
+> I highly recommend this way for auto track gestures in all windows.
 
 ```objective-c
 @implementation NSObject (Runtime)
@@ -55,37 +53,21 @@
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self swizzleInstanceMethodWithOriginSel:@selector(makeKeyAndVisible) swizzledSel:@selector(xy_makeKeyAndVisible)];
         [self swizzleInstanceMethodWithOriginSel:@selector(becomeKeyWindow) swizzledSel:@selector(xy_becomeKeyWindow)];
-        [self swizzleInstanceMethodWithOriginSel:@selector(makeKeyWindow) swizzledSel:@selector(xy_makeKeyWindow)];
+        [self swizzleInstanceMethodWithOriginSel:@selector(resignKeyWindow) swizzledSel:@selector(xy_resignKeyWindow)];
     });
-}
-
-- (void)xy_makeKeyAndVisible
-{
-    [self xy_makeKeyAndVisible];
-    [self startTrack];
 }
 
 - (void)xy_becomeKeyWindow
 {
     [self xy_becomeKeyWindow];
-    [self startTrack];
+    [self startTracking];
 }
 
-- (void)xy_makeKeyWindow
+- (void)xy_resignKeyWindow
 {
-    [self xy_makeKeyWindow];
-    [self startTrack];
+    [self xy_resignKeyWindow];
+    [self endTracking];
 }
-
-- (void)startTrack
-{
-    FORGestureTrack* track = [[FORGestureTrack alloc] initWithFrame:self.window.bounds];
-    track.dotWidth = 40;
-    track.layer.zPosition = CGFLOAT_MAX;
-    [self addSubview:track];
-}
-
 @end
 ```

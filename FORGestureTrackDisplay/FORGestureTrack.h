@@ -8,12 +8,10 @@
 
 #import "FORTrackGesture.h"
 
-//@interface UIWindow (tracking)
-//- (void)startTracking;
-//@end
+@interface UIWindow (tracking)
 
+- (void)startTracking;
 
-@interface FORGestureTrack : UIView <FORGestureDelegate>
-@property (nonatomic) UIColor* dotColor;
-@property (nonatomic) CGFloat dotWidth;
+- (void)endTracking;
+
 @end

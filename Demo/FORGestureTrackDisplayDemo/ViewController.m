@@ -11,6 +11,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UISwitch *trackSwitch;
+
 @end
 
 @implementation ViewController
@@ -36,6 +38,7 @@
 }
 
 #pragma mark - action
+
 - (void)showAlert {
     [[[UIAlertView alloc] initWithTitle:@"Alert Title" message:@"ready to debug alert view's layout" delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"Sure", nil] show];
     /*
@@ -57,5 +60,12 @@
     [self presentViewController:activityVC animated:YES completion:nil];
 }
 
+- (IBAction)switchValueChanged:(UISwitch *)sender {
+    if (sender.on) {
+        [[UIApplication sharedApplication].keyWindow startTracking];
+    } else {
+        [[UIApplication sharedApplication].keyWindow endTracking];
+    }
+}
 
 @end

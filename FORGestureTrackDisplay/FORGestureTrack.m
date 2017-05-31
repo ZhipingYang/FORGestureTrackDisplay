@@ -7,7 +7,7 @@
 //
 
 #import "FORGestureTrack.h"
-
+#import <objc/runtime.h>
 
 #pragma mark - FORTrackGesture Category
 
@@ -17,6 +17,13 @@
 
 #pragma mark -  FORGestureTrack
 
+@interface FORGestureTrack : UIView <FORGestureDelegate>
+
+@property (nonatomic, strong) UIColor* dotColor;
+
+@property (nonatomic, assign) CGFloat dotWidth;
+
+@end
 
 @implementation FORGestureTrack{
     FORTrackGesture* touchGesture;
@@ -43,8 +50,8 @@
     touchGesture = [FORTrackGesture sharedInstace];
     [touchGesture setTouchDelegate:self];
     dots = [NSMutableDictionary dictionary];
-    self.dotWidth = 20;
-    self.dotColor = [UIColor colorWithRed: 62.0/255.0 green: 151.0/255.0 blue: 0.8 alpha: 1.0];
+    self.dotWidth = 44;
+    self.dotColor = [UIColor lightGrayColor];
     self.userInteractionEnabled = YES;
     self.backgroundColor = [UIColor clearColor];
     self.opaque = NO;
@@ -52,7 +59,7 @@
 
 -(void)setDotColor:(UIColor *)dotColor {
     if(!dotColor) {
-        dotColor = [UIColor colorWithRed: 62.0/255.0 green: 151.0/255.0 blue: 0.8 alpha: 1.0];
+        dotColor = [UIColor lightGrayColor];
     }
     _dotColor = dotColor;
 }
@@ -147,12 +154,39 @@
 @end
 
 
-//@implementation UIWindow (tracking)
-//
-//- (void)startTracking {
-//    FORGestureTrack *track = [[FORGestureTrack alloc] initWithFrame:self.bounds];
-//    [self.window addSubview:track];
-//}
-//
-//@end
+const static char * FORGestureTrackView = "FORGestureTrackView";
+
+@implementation UIWindow (tracking)
+
+- (void)startTracking
+{
+    self.for_track = [[FORGestureTrack alloc] initWithFrame:self.bounds];
+    self.for_track.layer.zPosition = CGFLOAT_MAX;
+    [self addSubview:self.for_track];
+}
+
+- (void)endTracking
+{
+    if (self.for_track) {
+        [self.for_track removeFromSuperview];
+        self.for_track = nil;
+    }
+}
+
+- (void)setFor_track:(FORGestureTrack *)for_track
+{
+    objc_setAssociatedObject(self, FORGestureTrackView, for_track, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (FORGestureTrack *)for_track
+{
+    id obj = objc_getAssociatedObject(self, FORGestureTrackView);
+    if ([obj isKindOfClass:[FORGestureTrack class]]) {
+        return (FORGestureTrack *)obj;
+    }
+    return nil;
+}
+
+@end
+
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		657ED4151EDF43A00047D1F8 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 657ED4131EDF43A00047D1F8 /* NSObject+Runtime.m */; };
+		657ED4161EDF43A00047D1F8 /* UIWindow+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 657ED4141EDF43A00047D1F8 /* UIWindow+Runtime.m */; };
 		6583DC451EDF1DC000D1F3B4 /* FORTrackGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6583DC421EDF1DC000D1F3B4 /* FORTrackGesture.m */; };
 		6583DC461EDF1DC000D1F3B4 /* FORGestureTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6583DC441EDF1DC000D1F3B4 /* FORGestureTrack.m */; };
 		65DB2F881EDF1BEE006DA76E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DB2F871EDF1BEE006DA76E /* main.m */; };
@@ -20,6 +22,10 @@
 
 /* Begin PBXFileReference section */
 		10BF34F7EAE315CA98AB6D5F /* Pods-FORGestureTrackDisplayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FORGestureTrackDisplayDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FORGestureTrackDisplayDemo/Pods-FORGestureTrackDisplayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		657ED4111EDF43A00047D1F8 /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		657ED4121EDF43A00047D1F8 /* UIWindow+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Runtime.h"; sourceTree = "<group>"; };
+		657ED4131EDF43A00047D1F8 /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		657ED4141EDF43A00047D1F8 /* UIWindow+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Runtime.m"; sourceTree = "<group>"; };
 		6583DC411EDF1DC000D1F3B4 /* FORTrackGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FORTrackGesture.h; sourceTree = "<group>"; };
 		6583DC421EDF1DC000D1F3B4 /* FORTrackGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FORTrackGesture.m; sourceTree = "<group>"; };
 		6583DC431EDF1DC000D1F3B4 /* FORGestureTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FORGestureTrack.h; sourceTree = "<group>"; };
@@ -86,6 +92,10 @@
 				6583DC401EDF1DC000D1F3B4 /* FORGestureTrackDisplay */,
 				65DB2F891EDF1BEE006DA76E /* AppDelegate.h */,
 				65DB2F8A1EDF1BEE006DA76E /* AppDelegate.m */,
+				657ED4111EDF43A00047D1F8 /* NSObject+Runtime.h */,
+				657ED4131EDF43A00047D1F8 /* NSObject+Runtime.m */,
+				657ED4121EDF43A00047D1F8 /* UIWindow+Runtime.h */,
+				657ED4141EDF43A00047D1F8 /* UIWindow+Runtime.m */,
 				65DB2F8C1EDF1BEE006DA76E /* ViewController.h */,
 				65DB2F8D1EDF1BEE006DA76E /* ViewController.m */,
 				65DB2F8F1EDF1BEE006DA76E /* Main.storyboard */,
@@ -247,9 +257,11 @@
 			files = (
 				65DB2F8E1EDF1BEE006DA76E /* ViewController.m in Sources */,
 				6583DC451EDF1DC000D1F3B4 /* FORTrackGesture.m in Sources */,
+				657ED4151EDF43A00047D1F8 /* NSObject+Runtime.m in Sources */,
 				65DB2F8B1EDF1BEE006DA76E /* AppDelegate.m in Sources */,
 				6583DC461EDF1DC000D1F3B4 /* FORGestureTrack.m in Sources */,
 				65DB2F881EDF1BEE006DA76E /* main.m in Sources */,
+				657ED4161EDF43A00047D1F8 /* UIWindow+Runtime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

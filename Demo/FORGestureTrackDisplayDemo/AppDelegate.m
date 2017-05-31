@@ -18,9 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    FORGestureTrack* track = [[FORGestureTrack alloc] initWithFrame:self.window.bounds];
-    track.dotWidth = 40;
-    [self.window addSubview:track];
+    [self.window startTracking];
     
     return YES;
 }
